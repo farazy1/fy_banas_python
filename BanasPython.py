@@ -77,5 +77,10 @@ print("not 5 =", not 5)
 print("not False =", not False) 
 
 print("Random", random.randint(1,101))
+print("math.inf > 0", math.inf > 0)
+print("math.inf < 0",math.inf < 0)
+print("math.inf == math.inf",math.inf == math.inf)
+print("math.inf != math.inf",math.inf != math.inf)
+print("math.nan == math.nan",math.nan == math.nan)
 
 
