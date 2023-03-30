@@ -84,3 +84,47 @@ print("math.inf != math.inf",math.inf != math.inf)
 print("math.nan == math.nan",math.nan == math.nan)
 
 
+age = 30 
+if age > 21:
+    print("You can drive a tractor trailer")
+elif age >= 16:
+    print("You can drive a car")
+else: 
+    print("You can't drive")
+
+if age < 5:
+    print("You are a baby")
+elif (age >= 5) and (age <= 6):
+    print("You are a kid")
+elif (age >= 7) and (age <= 13):
+    print("You are a teenager")
+else:
+    print("You are an adult")
+
+canVote = True if age >= 18 else False
+print("Can Vote", canVote)
+
+print(r"I'll be ignored \n")
+
+print("I'll not be ignored \n")
+print("Hello" + "You")
+str3 = "Hello " + "You"
+print("Length:", len(str3))
+print("First 3:", str3[0:3])
+print("Every other:", str3[0:-1:2])
+str3 = str3.replace("Hello", "Goodbye")
+print(str3)
+str3 = str3[:8] + "y" + str3[9:]
+print(str3) 
+print("you" in str3) #searching for the word "you" in the string
+print("You index:",str3.find("you"))
+print("      [Hello]       ".strip())
+print(" ".join(["Some", "Words"]))
+print("A string".split(" "))
+int1 = int2 = 5
+print(f'{int1} + {int2} = {int1 + int2}')
+print('{int1} + {int2} = {int1 + int2}')
+print('int1 + int2 =', int1 + int2)
+
+
+
