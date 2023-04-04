@@ -367,3 +367,5 @@ with open("mydata.txt", mode="w", encoding="utf-8") as my_file:
 with open("mydata.txt", encoding="utf-8") as my_file:
     print(my_file.read())
 print(my_file.closed) #returns true if the file being checked is actually closed
+
+
