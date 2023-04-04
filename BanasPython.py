@@ -329,14 +329,41 @@ def mult_by(num):
 print("3*5=", (mult_by(3)(5)))
 
 def mult_list(list, func):
+    print(list)
     for x in list:
         print(func(x))
 
-def mult_list(list, func):
-    for x in list:
-        print(func(x))
+
 mult_by_4 = mult_by(4)
 mult_list(list(range(0, 5)), mult_by_4)
 
 power_list = [lambda x: x ** 2,
               lambda x: x ** 3]
+                         
+one_to_4 = range(1,5)
+times2 = lambda x:x * 2
+print(list(map(times2, one_to_4)))
+
+print(list(filter((lambda x: x % 2 == 0), range(1,11))))
+
+print(reduce((lambda x,y: x + y), range(1,6)))
+
+while True:
+    try:
+        number = int(input("Please enter a number: "))
+        break
+    except ValueError:
+        print("You didn't enter a number")
+    except:
+        print("An unknown error occurred")
+print("Thank you")
+
+with open("mydata.txt", mode="w", encoding="utf-8") as my_file:
+    my_file.write("Some random text\nMore random text\nand more\n")
+    my_file.write("test2\n")
+
+    
+
+with open("mydata.txt", encoding="utf-8") as my_file:
+    print(my_file.read())
+print(my_file.closed) #returns true if the file being checked is actually closed
